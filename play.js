@@ -93,7 +93,7 @@ class Game {
     }
 
     getPlayerName() {
-        return localStroage.getItem('userName') ?? 'Mystery player';
+        return localStorage.getItem('userName') ?? 'Mystery player';
     }
 
     async playSequence() {
@@ -128,7 +128,7 @@ class Game {
     }
     
     saveScore(score) {
-        const userName = this.getPlayerName;
+        const userName = this.getPlayerName();
         let scores = [];
         const scoresText = localStorage.getItem('scores');
         if (scoresText) {
@@ -144,7 +144,7 @@ class Game {
         const newScore = { name: userName, score: score, date: date};
 
         let found = false;
-        for (conse [i, prevScore] of scores.entries()) {
+        for (const [i, prevScore] of scores.entries()) {
             if (score > prevScore.score) {
                 scores.splice(i, 0, newScore);
                 found = true;
