@@ -89,10 +89,10 @@ function App() {
       </Routes>
 
       <footer className='bg-dark text-dark text-muted'>
-        <div class="container-fluid">
-          <span class="text-reset">Mason Miller</span>
-          <a class="text-reset"
-            href="https://github.com/mkm02/simon">
+        <div className='container-fluid'>
+          <span className='text-reset'>Mason Miller</span>
+          <a className='text-reset'
+            href='https://github.com/mkm02/simon'>
             GitHub
           </a>
         </div>
